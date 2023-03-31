@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Registro de Usuario</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navegacion">
+    <div class="containerGeneral">
+        <p>Taller1</p>
+        <a class="nav" href="landing.html">Home</a>
+        <a class="nav" href="formulario.html">Formulario</a>
+        <a class="nav" href="tabla.html">Tabla</a>
+    </div>
+
+</nav>
+<div class="containerRegistro">
+    <h2>Registro de nuevo jugador</h2>
+    <form action="tabla.html" method="post">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Ingresa tu email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="edad">Edad:</label>
+            <input type="number" class="form-control" id="edad" placeholder="Ingresa tu edad" name="edad" required>
+        </div>
+        <div class="form-group">
+            <label for="pais">País:</label>
+            <select class="form-control" id="pais" name="pais" required>
+                <option value="">Selecciona un país</option>
+                <option value="Chile">Chile</option>
+                <option value="México">México</option>
+                <option value="Estados Unidos">Estados Unidos</option>
+                <option value="Canadá">Canadá</option>
+                <option value="España">España</option>
+                <option value="Argentina">Argentina</option>
+            </select>
+        </div>
+        <label>
+            <input type="checkbox" id="cbox1" value="first_checkbox"> Esta retirado?
+        </label><br>
+        <button type="submit" class="btn btn-primary">Registrar</button>
+    </form>
+</div>
+
+</body>
+<footer>
+    Maximiliano Cortés 2023
+</footer>
+</html>
